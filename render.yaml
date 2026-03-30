@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: km-live-chat
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: PORT
+        value: 10000
